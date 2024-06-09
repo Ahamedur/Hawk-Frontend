@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
+import '../App.css'; // Ensure this path is correct
 
 function Dashboard() {
   const [username, setUsername] = useState('');
@@ -28,10 +29,12 @@ function Dashboard() {
   };
 
   return (
-    <div>
+    <div className="background-image-container">
+    <div className="form-container">
       <h1>Welcome, {username}</h1>
       <p>If you are not {username}, please <button onClick={handleLogout}>logout</button> immediately.</p>
     </div>
+   </div>
   );
 }
 

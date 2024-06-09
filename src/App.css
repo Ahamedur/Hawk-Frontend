@@ -1,51 +1,140 @@
 /* App.css */
 
 body {
-  background-color: #f0f0f0; /* Change the background color of the body */
-  color: #333; /* Change the text color */
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #333;
 }
 
-.App {
+.background-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('./hawklogo.png') no-repeat center center;
+  background-size: contain;
+  background-color: #000;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  color: #4CAF50; /* Change the color of h1 headers */
-}
-
-input {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
+  max-width: 400px;
+  width: 100%;
   color: #fff;
-  background-color: #4CAF50; /* Change the background color of buttons */
+}
+
+.form-container .welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  background-color: #fff;
+  color: #333;
+}
+
+.form-container button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-size: 16px;
   cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #45a049; /* Change the background color of buttons on hover */
+.form-container button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
 }
 
-p {
-  color: #666; /* Change the color of paragraph text */
+.form-container p {
+  margin-top: 10px;
+  color: #ccc;
 }
 
-a {
-  color: #4CAF50; /* Change the color of links */
+.form-container a {
+  color: #4CAF50;
   text-decoration: none;
 }
 
-a:hover {
+.form-container a:hover {
   text-decoration: underline;
 }
+
+/* Verification container styles */
+.verification-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('./email.png') no-repeat center center;
+  background-size: contain;
+  background-color: #000;
+}
+
+.verification-container .form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  color: #fff;
+}
+
+.verification-container .form-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.verification-container .form-container p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.verification-container .form-container .verification-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.verification-container .form-container .verification-inputs input {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5em;
+  text-align: center;
+}
+
